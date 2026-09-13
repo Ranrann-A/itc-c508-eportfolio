@@ -840,3 +840,155 @@ h3 { font-size: 1.24rem; margin-bottom: 10px; }
   .course-console { min-height: 410px; padding: 24px; }
   .console-orbit { width: min(245px, 78%); }
 }
+
+/* Home: clearer grouping for course expectations */
+.expectations-head { max-width: 820px; }
+
+.topic-panel,
+.reflection-expectation-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 96%, var(--primary) 4%), var(--surface));
+  box-shadow: var(--shadow-soft);
+}
+
+.topic-panel {
+  overflow: hidden;
+  padding: clamp(28px, 4.5vw, 48px);
+}
+
+.topic-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent), transparent 82%);
+}
+
+.topic-panel-head {
+  max-width: 820px;
+  margin-bottom: 30px;
+}
+
+.topic-panel-head h3 {
+  margin: 5px 0 0;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.topic-subsection {
+  max-width: 920px;
+}
+
+.topic-subsection h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-size: 1.08rem;
+  color: var(--text);
+}
+
+.topic-subsection h4::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 0 0 5px var(--primary-soft);
+}
+
+.topic-subsection p,
+.standalone-reading-card p,
+.reflection-expectation-copy p {
+  color: var(--text-soft);
+}
+
+.topic-subsection p { margin: 0; }
+.topic-subsection p + p { margin-top: 1.16rem; }
+
+.topic-divider {
+  height: 1px;
+  margin: 34px 0;
+  background: linear-gradient(90deg, var(--border-strong), var(--border), transparent);
+}
+
+.course-topic-section {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.nlp-topic-section {
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--primary-soft) 55%, transparent), transparent);
+}
+
+.topic-section-head {
+  max-width: 825px;
+  margin-bottom: 24px;
+}
+
+.standalone-reading-card {
+  padding: clamp(28px, 4vw, 42px);
+}
+
+.reflection-topic-section { padding-top: 50px; }
+
+.reflection-expectation-card {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 28px;
+  padding: clamp(28px, 4.5vw, 46px);
+  overflow: hidden;
+}
+
+.reflection-expectation-card::after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -95px;
+  top: -100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-soft), transparent 70%);
+  pointer-events: none;
+}
+
+.reflection-marker {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--primary) 38%, var(--border));
+  border-radius: 20px;
+  background: var(--primary-soft);
+  color: color-mix(in srgb, var(--primary) 84%, var(--text));
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.reflection-expectation-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+}
+
+.reflection-expectation-copy p { margin: 0; }
+.reflection-expectation-copy p + p { margin-top: 1.18rem; }
+
+@media (max-width: 720px) {
+  .topic-panel { padding: 25px 22px; }
+  .topic-divider { margin: 28px 0; }
+  .reflection-expectation-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 25px 22px;
+  }
+  .reflection-marker {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+  }
+}
