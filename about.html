@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d18">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('itc508-theme');
+      document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
+    })();
+  </script>
   <meta name="description" content="About Stephen Rainiel Adame, student in ITC-C508 Deep Learning for Predictive Modeling.">
   <title>About Me | ITC-C508 E-Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css">
@@ -52,8 +59,9 @@
 
         <article class="info-card">
           <h2>Course Information</h2>
-          <p><strong>Course Code | Section:</strong> ITC-C508 | 401I</p>
+          <p><strong>Course Code:</strong> ITC-C508</p>
           <p><strong>Course Title:</strong> Deep Learning for Predictive Modeling</p>
+          <p><strong>Section:</strong> 401I</p>
           <p><strong>Academic E-mail:</strong> stephenrainiel.adame@my.jru.edu</p>
         </article>
       </div>

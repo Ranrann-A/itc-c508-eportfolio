@@ -32,3 +32,8 @@ A static GitHub Pages-ready academic e-portfolio for **Stephen Rainiel Adame** a
 6. GitHub will provide the public Pages URL after deployment.
 
 No framework or build step is required.
+
+
+## Theme
+
+The portfolio uses dark mode by default. Visitors can switch to light mode using the theme button in the top navigation, and the selected theme is remembered in the browser.

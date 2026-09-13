@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d18">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('itc508-theme');
+      document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
+    })();
+  </script>
   <meta name="description" content="ITC-C508 course e-portfolio of Stephen Rainiel Adame for Deep Learning for Predictive Modeling.">
   <title>ITC-C508 E-Portfolio | Stephen Rainiel Adame</title>
   <link rel="stylesheet" href="assets/styles.css">
@@ -39,8 +46,28 @@
           <a class="btn btn-secondary" href="about.html">About Me</a>
         </div>
       </div>
-      <div class="hero-visual" aria-label="Technology-inspired study image">
-        <img src="https://static.wixstatic.com/media/535604_59ffb879ba664829aa294471070a5669~mv2.jpg" alt="Laptop, notebook, pen, and coffee on a study desk">
+      <div class="hero-visual course-console" aria-label="ITC-C508 course overview">
+        <div class="console-topline">
+          <span>Course Snapshot</span>
+          <span class="console-status"><i></i> Active Semester</span>
+        </div>
+        <div class="console-orbit" aria-hidden="true">
+          <span class="orbit-core">AI</span>
+          <span class="orbit-node node-one"></span>
+          <span class="orbit-node node-two"></span>
+          <span class="orbit-node node-three"></span>
+          <span class="orbit-line line-one"></span>
+          <span class="orbit-line line-two"></span>
+          <span class="orbit-line line-three"></span>
+        </div>
+        <div class="console-copy">
+          <span class="console-label">ITC-C508</span>
+          <h3>Deep Learning for Predictive Modeling</h3>
+          <p>Documenting practical NLP work, model experiments, results, and reflections across the semester.</p>
+          <div class="console-tags" aria-label="Course topics">
+            <span>Deep Learning</span><span>NLP</span><span>Predictive Modeling</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
