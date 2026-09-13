@@ -992,3 +992,164 @@ h3 { font-size: 1.24rem; margin-bottom: 10px; }
     border-radius: 16px;
   }
 }
+
+/* Supporting evidence and downloadable activity resources */
+.supporting-section {
+  margin: 28px 30px 0;
+  padding: clamp(22px, 4vw, 32px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface-2);
+}
+.supporting-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+.supporting-heading h3 { margin-bottom: 7px; }
+.supporting-heading p { max-width: 760px; margin: 0; color: var(--muted); }
+.evidence-figure {
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+.evidence-image-wrap {
+  padding: clamp(12px, 2.2vw, 20px);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--primary-soft) 64%, transparent), transparent 45%),
+    var(--surface-3);
+  border-bottom: 1px solid var(--border);
+}
+.evidence-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #fff;
+}
+.evidence-caption {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 18px 20px;
+}
+.evidence-caption h4,
+.resource-card h4 { margin: 2px 0 5px; font-size: 1rem; }
+.evidence-caption p,
+.resource-card p { margin: 0; color: var(--muted); font-size: .91rem; }
+.resource-type {
+  color: color-mix(in srgb, var(--primary) 86%, var(--text));
+  font-size: .7rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.text-link {
+  white-space: nowrap;
+  color: var(--primary);
+  font-size: .86rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.text-link:hover { text-decoration: underline; }
+.resource-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+.resource-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--primary) 38%, var(--border));
+  border-radius: 14px;
+  background: var(--primary-soft);
+  color: color-mix(in srgb, var(--primary) 88%, var(--text));
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+.resource-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+.resource-meta span {
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 700;
+}
+.resource-download { white-space: nowrap; }
+
+@media (max-width: 760px) {
+  .supporting-section { margin-left: 22px; margin-right: 22px; }
+  .evidence-caption,
+  .resource-card { grid-template-columns: 1fr; }
+  .evidence-caption .text-link { justify-self: start; }
+  .resource-icon { width: 48px; height: 48px; }
+  .resource-download { width: 100%; }
+}
+
+
+/* PT-P2 experiment summary inside supporting resources */
+.experiment-snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 18px;
+}
+.experiment-snapshot > div {
+  min-width: 0;
+  padding: 16px 17px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: var(--surface);
+}
+.experiment-snapshot span,
+.experiment-snapshot small {
+  display: block;
+  color: var(--muted);
+}
+.experiment-snapshot span {
+  margin-bottom: 6px;
+  font-size: .7rem;
+  font-weight: 850;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.experiment-snapshot strong {
+  display: block;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.experiment-snapshot small {
+  margin-top: 4px;
+  font-size: .75rem;
+  line-height: 1.4;
+}
+.ptp2-supporting .resource-card + .resource-card {
+  margin-top: 12px;
+}
+@media (max-width: 760px) {
+  .experiment-snapshot { grid-template-columns: 1fr; }
+}

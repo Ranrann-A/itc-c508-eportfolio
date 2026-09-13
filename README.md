@@ -1,6 +1,6 @@
 # ITC-C508 E-Portfolio
 
-A static GitHub Pages-ready academic e-portfolio for **Stephen Rainiel Adame** and the course **ITC-C508: Deep Learning for Predictive Modeling**.
+A static GitHub Pages-ready academic e-portfolio for **Stephen Rainiel Adame** and the course **ITC-C508: ITE Elective 4: Deep Learning**.
 
 ## Pages
 

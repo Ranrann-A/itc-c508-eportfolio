@@ -1,0 +1,346 @@
+text,label,category
+The logging interface keeps freezing whenever I query more than seven days of data.,0,Negative Feedback
+Terrible experience with the latest API patch; it broke our authentication flow.,0,Negative Feedback
+"The container orchestration UI is confusing, cluttered, and unintuitive.",0,Negative Feedback
+We are experiencing very slow query performance after the recent database migration.,0,Negative Feedback
+I am extremely frustrated with the unexplained latency spikes in our US-East region.,0,Negative Feedback
+Your system documentation is outdated and missing crucial configuration steps.,0,Negative Feedback
+Complete waste of money; the auto-scaler failed to trigger during peak traffic.,0,Negative Feedback
+Why does the CLI tool crash every time we attempt a multi-region deployment?,0,Negative Feedback
+The error messages are completely unhelpful and make debugging impossible.,0,Negative Feedback
+I want a full refund for our subscription this month due to constant instability.,0,Negative Feedback
+"Oh great, another crash right in the middle of our production deployment.",0,Negative Feedback
+Fantastic job breaking our system workflow with your latest patch.,0,Negative Feedback
+Everything is just wonderful when the servers go down every single hour.,0,Negative Feedback
+Super job making the user interface even slower than before.,0,Negative Feedback
+Thanks a lot for deleting my saved dashboard configurations without warning.,0,Negative Feedback
+The new deployment pipeline is lightning fast and saved our team hours!,1,Positive Feedback
+"Excellent uptime this month, our production servers haven't dropped once.",1,Positive Feedback
+Your technical support engineer resolved our API routing issue immediately.,1,Positive Feedback
+Five stars for the new dashboard monitoring metrics' super clean layout.,1,Positive Feedback
+Incredible performance boost after upgrading to the enterprise tier.,1,Positive Feedback
+I love the automated backup feature; it works seamlessly in the background.,1,Positive Feedback
+"Great documentation on Kubernetes cluster integration, very easy to follow.",1,Positive Feedback
+"Thank you for the quick feature release, this solves our exact workflow bottleneck.",1,Positive Feedback
+Super smooth onboarding process for our junior developers.,1,Positive Feedback
+Best cloud infrastructure management tool we have used all year.,1,Positive Feedback
+"I usually expect enterprise deployments to crash, but your platform has been flawlessly stable.",1,Positive Feedback
+"Even during our critical peak traffic emergency, the auto-scaler handled everything perfectly without breaking a sweat.",1,Positive Feedback
+"The old legacy system was a complete nightmare, but transitioning to your new API is an absolute dream.",1,Positive Feedback
+I'm genuinely shocked that a massive database migration could actually go off without a single error or failure.,1,Positive Feedback
+"Despite the awful network outage on our end, your redundant backup system didn't lose a single byte of our data. Amazing job!",1,Positive Feedback
+CRITICAL: Our production database is down and we need immediate help!,2,Urgent Support
+I cannot access our admin console and our quarterly deployment deadline is today.,2,Urgent Support
+Urgent! Our SSL certificates failed to renew and our primary domain is unreachable.,2,Urgent Support
+System down! Need immediate emergency intervention from level 3 tech support.,2,Urgent Support
+"We are locked out of our primary AWS billing dashboard, please help ASAP.",2,Urgent Support
+Payment processing failed on our checkout page due to an endpoint timeout. Help now!,2,Urgent Support
+EMERGENCY: Our storage bucket is showing unauthorized access attempts.,2,Urgent Support
+All microservices are failing health checks after the automatic update.,2,Urgent Support
+Please escalate immediately: our webhook integration has completely stopped firing.,2,Urgent Support
+Our production cluster is unreachable and customers are actively complaining.,2,Urgent Support
+It's just wonderful that our primary database decided to delete itself 10 minutes before the product launch. Escalate this immediately.,2,Urgent Support
+I would greatly appreciate it if someone could look into the total and complete loss of server access we are experiencing right now.,2,Urgent Support
+"The new update is great, except it completely locked us out of the admin panel and we can no longer process customer payments.",2,Urgent Support
+Everything was working perfectly until the screen went black and now zero traffic is routing to our production endpoints. SOS.,2,Urgent Support
+"Hey, quick question: is it normal for the entire Kubernetes cluster to go completely offline and refuse all connections? We need a fix ASAP.",2,Urgent Support
+"Oh brilliant, another server outage right when I need to deploy.",0,Negative Feedback
+I absolutely love it when the API just decides to take a coffee break.,0,Negative Feedback
+Your upgraded dashboard is a masterclass in how to hide basic features.,0,Negative Feedback
+It is truly impressive how you managed to make the software even slower.,0,Negative Feedback
+"Thanks for the update, it successfully broke my entire authentication flow.",0,Negative Feedback
+The new UI is so intuitive that I now need a map to find the logout button.,0,Negative Feedback
+Nothing says enterprise-grade like random 500 errors every afternoon.,0,Negative Feedback
+I am thrilled that your load balancer just drops connections for fun.,0,Negative Feedback
+"Wow, your documentation is as helpful as a screen door on a submarine.",0,Negative Feedback
+"Great job on the patch, I didn't want to access my data today anyway.",0,Negative Feedback
+I really enjoy paying premium prices for a service that works half the time.,0,Negative Feedback
+The latency is so bad I can actually see the pixels aging.,0,Negative Feedback
+"Sure, just randomly change the API endpoints without versioning, that's fine.",0,Negative Feedback
+My favorite feature is how the container orchestration UI freezes constantly.,0,Negative Feedback
+"Thanks for the memory leak, my server's RAM really needed a workout.",0,Negative Feedback
+I love paying for a SaaS product that acts like it is still in alpha.,0,Negative Feedback
+Your search function is great if I wanted results from a completely different database.,0,Negative Feedback
+"Fantastic, the export feature just downloads a corrupted file. Very helpful.",0,Negative Feedback
+I am amazed at how complicated you made a simple password reset.,0,Negative Feedback
+The auto-save feature is a fun game of will it or won't it keep my work.,0,Negative Feedback
+Nothing like waking up to a completely redesigned layout that no one asked for.,0,Negative Feedback
+Your mobile app crashes more often than it opens. Keep up the good work.,0,Negative Feedback
+I didn't realize real-time sync actually meant maybe tomorrow sync.,0,Negative Feedback
+Your customer support bot is incredibly skilled at ignoring my actual problem.,0,Negative Feedback
+"Wow, a whole 5 seconds to load a plain text page. Groundbreaking speed.",0,Negative Feedback
+"I appreciate the daily downtime, really helps me practice my meditation.",0,Negative Feedback
+So glad the billing page works perfectly while the actual software is down.,0,Negative Feedback
+"The data export is missing half the columns, which is a fun surprise.",0,Negative Feedback
+I am continually impressed by your ability to introduce new bugs with every fix.,0,Negative Feedback
+The dark mode is great if you enjoy illegible gray text on a black background.,0,Negative Feedback
+Your seamless integration requires a Ph.D. and three third-party tools.,0,Negative Feedback
+The notification system is fantastic at alerting me 24 hours late.,0,Negative Feedback
+I love that I have to clear my cache every time I want to use your platform.,0,Negative Feedback
+The reporting tool is basically a random number generator at this point.,0,Negative Feedback
+Thank you for removing the one feature that made this software useful.,0,Negative Feedback
+Your cloud storage is more like a black hole where my files disappear.,0,Negative Feedback
+The helpful tooltips are aggressively getting in the way of my clicks.,0,Negative Feedback
+I enjoy the suspense of wondering if my changes will actually commit.,0,Negative Feedback
+"Your status page says all systems operational, but reality strongly disagrees.",0,Negative Feedback
+The permissions system is a great way to lock administrators out of their own accounts.,0,Negative Feedback
+I am fascinated by the constant SSL certificate errors I keep getting.,0,Negative Feedback
+"Your analytics dashboard is giving me metrics from last month, very proactive.",0,Negative Feedback
+The two-factor authentication is so secure that even I can't log in.,0,Negative Feedback
+I love finding out about breaking API changes in production instead of an email.,0,Negative Feedback
+The drag-and-drop builder is a great test of my patience.,0,Negative Feedback
+Your onboarding tutorial is like an unskippable ad for features that don't work.,0,Negative Feedback
+"I appreciate the random logouts, really keeps me on my toes.",0,Negative Feedback
+The syntax highlighting in your editor is apparently based on random chance.,0,Negative Feedback
+Your quick start guide took me three days to decipher.,0,Negative Feedback
+"Thank you for the endless loading spinner, it is very hypnotic.",0,Negative Feedback
+"Wow, the deployment actually worked on the first try. Am I dreaming?",1,Positive Feedback
+I almost had a heart attack because the servers didn't crash today. Excellent job!,1,Positive Feedback
+"Finally, a release that does not require me to rewrite my entire codebase.",1,Positive Feedback
+I am genuinely terrified by how fast this new query optimization is.,1,Positive Feedback
+"Shockingly, the support team fixed my issue before I could even complain on Twitter.",1,Positive Feedback
+"Whoa, an update that actually improves the UX? What timeline is this?",1,Positive Feedback
+I am amazed that the migration script didn't corrupt anything. Kudos!,1,Positive Feedback
+Thank you for a billing interface that doesn't require a Ph.D. in accounting to understand.,1,Positive Feedback
+"Surprisingly, the uptime SLA was actually met this month. Keep it up.",1,Positive Feedback
+I am stunned; the new API patch is actually backward compatible.,1,Positive Feedback
+"It only took you three years, but this feature is exactly what we needed.",1,Positive Feedback
+"Good job on the docs, I didn't even have to guess the parameters this time.",1,Positive Feedback
+"The dashboard loads instantly now, did you guys finally buy better servers?",1,Positive Feedback
+"I am impressed, the automated scaling actually scaled instead of just crashing.",1,Positive Feedback
+"For once, I don't regret updating the dependency. Solid work.",1,Positive Feedback
+The data sync is so fast it finished before I could even take a sip of coffee.,1,Positive Feedback
+"I was prepared for a headache, but the integration was surprisingly painless.",1,Positive Feedback
+You actually listened to user feedback? I'm genuinely shocked and impressed.,1,Positive Feedback
+The new search algorithm actually finds what I am looking for. Incredible.,1,Positive Feedback
+"Hats off to the dev team, this might be the first bug-free release I've seen.",1,Positive Feedback
+I love the new feature so much I almost forgot how much I hated the old one.,1,Positive Feedback
+"Finally, an error message that actually tells me what went wrong!",1,Positive Feedback
+The performance improvements are so good I thought my metrics were broken.,1,Positive Feedback
+I am delightfully surprised that the mobile app is just as good as the desktop version.,1,Positive Feedback
+"Excellent support response, it felt like I was talking to an actual human being.",1,Positive Feedback
+The onboarding process was so smooth I didn't even need to contact support.,1,Positive Feedback
+"You finally added dark mode, my eyes are eternally grateful.",1,Positive Feedback
+The pricing structure is actually transparent. Did I stumble into an alternate reality?,1,Positive Feedback
+I am shocked by how easily I was able to restore from a backup.,1,Positive Feedback
+"The webhook reliability has been 100% this week, knocking on wood.",1,Positive Feedback
+"Great job simplifying the UI, it no longer looks like an airplane cockpit.",1,Positive Feedback
+The zero-downtime deployment actually resulted in zero downtime. Well done.,1,Positive Feedback
+I am pleasantly surprised that the cache clearing bug is finally squashed.,1,Positive Feedback
+"The customization options are fantastic, I can actually make it look decent.",1,Positive Feedback
+I can't believe how easy it was to provision a new cluster.,1,Positive Feedback
+"The memory footprint has been reduced drastically, my servers are very happy.",1,Positive Feedback
+You actually documented the edge cases. I am beyond impressed.,1,Positive Feedback
+The automated alerts saved us before the issue even hit production.,1,Positive Feedback
+Thank you for making the export format a standard CSV instead of proprietary junk.,1,Positive Feedback
+The accessibility improvements are genuinely fantastic. Great job.,1,Positive Feedback
+"I was expecting a disaster, but the major version upgrade was flawless.",1,Positive Feedback
+The community forums are actually helpful now. Who would have thought?,1,Positive Feedback
+"The sandbox environment perfectly mirrors production, which is a rare treat.",1,Positive Feedback
+"Excellent job on the real-time collaboration feature, it is buttery smooth.",1,Positive Feedback
+I am thrilled that the background workers aren't failing silently anymore.,1,Positive Feedback
+The rate limiting is very fair and gracefully implemented.,1,Positive Feedback
+"Finally, a single sign-on implementation that didn't make me want to cry.",1,Positive Feedback
+The new charting library makes our reports look incredibly professional.,1,Positive Feedback
+I am very happy that the API payload size was significantly optimized.,1,Positive Feedback
+"10/10 update, please give whoever coded this a raise immediately.",1,Positive Feedback
+"No rush, I am just losing thousands of dollars a minute over here.",2,Urgent Support
+"Take your time replying, I will just explain to my boss that the cloud evaporated.",2,Urgent Support
+"Whenever you are done playing ping-pong, our production database is down.",2,Urgent Support
+Just a minor detail: all of our clients are getting a 502 Bad Gateway right now.,2,Urgent Support
+I would love to get a response to my ticket before I retire.,2,Urgent Support
+"Don't panic, but our payment gateway is currently charging everyone triple.",2,Urgent Support
+It would be super awesome if the main server wasn't literally on fire right now.,2,Urgent Support
+"Hey guys, the system is completely unresponsive, but take your time, it's just my job on the line.",2,Urgent Support
+"I know it is Friday afternoon, but the entire cluster just died. Help.",2,Urgent Support
+Please fix the DNS routing issue before my CEO finds out and fires me.,2,Urgent Support
+"Awesome, the data center is unreachable. Anyone awake at support?",2,Urgent Support
+I guess I didn't need to process any transactions today anyway. Fix this ASAP!,2,Urgent Support
+URGENT: Your latest push just wiped out our entire user table.,2,Urgent Support
+We are completely dead in the water. A response would be mildly appreciated.,2,Urgent Support
+"Everything is broken. Send help, send a rollback, send whatever you have immediately.",2,Urgent Support
+The API is returning 404 for every single endpoint. Pls fix now.,2,Urgent Support
+I love that our SSL certificate expired despite auto-renew being on. Help immediately.,2,Urgent Support
+We are locked out of the admin panel and production is currently crashing.,2,Urgent Support
+Our background jobs are stuck in a dead loop and consuming 100% CPU. Urgent!,2,Urgent Support
+"Just a heads up, your security update completely blocked our IP range.",2,Urgent Support
+The load balancer is sending all traffic to a dead node. Please intervene!,2,Urgent Support
+I am begging you to rollback whatever you just deployed 5 minutes ago.,2,Urgent Support
+"Critical failure on the checkout page, nobody can buy anything!",2,Urgent Support
+We are losing data by the second because the primary database failed over incorrectly.,2,Urgent Support
+"I am sure you are busy, but our entire application is rendering a blank white page.",2,Urgent Support
+The storage volume just detached itself from the primary instance. SOS.,2,Urgent Support
+Your billing system just suspended our account by mistake. Restore it immediately!,2,Urgent Support
+We are experiencing a massive DDoS and your mitigation tool isn't kicking in.,2,Urgent Support
+CRITICAL: Passwords are being logged in plaintext after the last patch!,2,Urgent Support
+The webhook delivery system has completely halted. We are missing critical events.,2,Urgent Support
+"I'm sure the 503 Service Unavailable error is just a feature, but please turn it off.",2,Urgent Support
+All of our scheduled tasks failed to run last night. We need emergency support.,2,Urgent Support
+The memory leak is so bad our instances are OOM crashing every 5 minutes.,2,Urgent Support
+We cannot provision any new servers and the current ones are at capacity.,2,Urgent Support
+Just letting you know that our custom domain routing vanished into thin air.,2,Urgent Support
+We are currently facing a Sev-1 outage due to the gateway timeout errors.,2,Urgent Support
+The database migration script hung at 99% and now everything is locked.,2,Urgent Support
+Urgent help needed: the API rate limits are triggering after 1 request.,2,Urgent Support
+"The multi-tenant isolation just failed, users are seeing each other's data!",2,Urgent Support
+"I know it's 2 AM, but the authentication server is completely offline.",2,Urgent Support
+Our file uploads are silently failing and customers are furious. Fix this now.,2,Urgent Support
+We are getting a Connection Refused error on the primary redis cluster.,2,Urgent Support
+The content delivery network is caching private user data. Purge immediately!,2,Urgent Support
+The system is rejecting all valid API keys. We are at a standstill.,2,Urgent Support
+"Please escalate this ticket, our microservices can no longer communicate.",2,Urgent Support
+We just got a database corruption alert. I really hope your backups work.,2,Urgent Support
+The node cluster has split brain and data is diverging. Urgent assistance required.,2,Urgent Support
+A runaway process is eating all our bandwidth. We need a manual kill switch now.,2,Urgent Support
+The firewall rules mysteriously reset and blocked all incoming traffic.,2,Urgent Support
+Emergency: The disaster recovery failover did not work. We are completely down.,2,Urgent Support
+"Oh brilliant, another server outage right when I need to deploy.",0,Negative Feedback
+I absolutely love it when the API just decides to take a coffee break.,0,Negative Feedback
+Your upgraded dashboard is a masterclass in how to hide basic features.,0,Negative Feedback
+It is truly impressive how you managed to make the software even slower.,0,Negative Feedback
+"Thanks for the update, it successfully broke my entire authentication flow.",0,Negative Feedback
+The new UI is so intuitive that I now need a map to find the logout button.,0,Negative Feedback
+Nothing says enterprise-grade like random 500 errors every afternoon.,0,Negative Feedback
+I am thrilled that your load balancer just drops connections for fun.,0,Negative Feedback
+"Wow, your documentation is as helpful as a screen door on a submarine.",0,Negative Feedback
+"Great job on the patch, I didn't want to access my data today anyway.",0,Negative Feedback
+I really enjoy paying premium prices for a service that works half the time.,0,Negative Feedback
+The latency is so bad I can actually see the pixels aging.,0,Negative Feedback
+"Sure, just randomly change the API endpoints without versioning, that's fine.",0,Negative Feedback
+My favorite feature is how the container orchestration UI freezes constantly.,0,Negative Feedback
+"Thanks for the memory leak, my server's RAM really needed a workout.",0,Negative Feedback
+I love paying for a SaaS product that acts like it is still in alpha.,0,Negative Feedback
+Your search function is great if I wanted results from a completely different database.,0,Negative Feedback
+"Fantastic, the export feature just downloads a corrupted file. Very helpful.",0,Negative Feedback
+I am amazed at how complicated you made a simple password reset.,0,Negative Feedback
+The auto-save feature is a fun game of will it or won't it keep my work.,0,Negative Feedback
+Nothing like waking up to a completely redesigned layout that no one asked for.,0,Negative Feedback
+Your mobile app crashes more often than it opens. Keep up the good work.,0,Negative Feedback
+I didn't realize real-time sync actually meant maybe tomorrow sync.,0,Negative Feedback
+Your customer support bot is incredibly skilled at ignoring my actual problem.,0,Negative Feedback
+"Wow, a whole 5 seconds to load a plain text page. Groundbreaking speed.",0,Negative Feedback
+"I appreciate the daily downtime, really helps me practice my meditation.",0,Negative Feedback
+So glad the billing page works perfectly while the actual software is down.,0,Negative Feedback
+"The data export is missing half the columns, which is a fun surprise.",0,Negative Feedback
+I am continually impressed by your ability to introduce new bugs with every fix.,0,Negative Feedback
+The dark mode is great if you enjoy illegible gray text on a black background.,0,Negative Feedback
+Your seamless integration requires a Ph.D. and three third-party tools.,0,Negative Feedback
+The notification system is fantastic at alerting me 24 hours late.,0,Negative Feedback
+I love that I have to clear my cache every time I want to use your platform.,0,Negative Feedback
+The reporting tool is basically a random number generator at this point.,0,Negative Feedback
+Thank you for removing the one feature that made this software useful.,0,Negative Feedback
+Your cloud storage is more like a black hole where my files disappear.,0,Negative Feedback
+The helpful tooltips are aggressively getting in the way of my clicks.,0,Negative Feedback
+I enjoy the suspense of wondering if my changes will actually commit.,0,Negative Feedback
+"Your status page says all systems operational, but reality strongly disagrees.",0,Negative Feedback
+The permissions system is a great way to lock administrators out of their own accounts.,0,Negative Feedback
+I am fascinated by the constant SSL certificate errors I keep getting.,0,Negative Feedback
+"Your analytics dashboard is giving me metrics from last month, very proactive.",0,Negative Feedback
+The two-factor authentication is so secure that even I can't log in.,0,Negative Feedback
+I love finding out about breaking API changes in production instead of an email.,0,Negative Feedback
+The drag-and-drop builder is a great test of my patience.,0,Negative Feedback
+Your onboarding tutorial is like an unskippable ad for features that don't work.,0,Negative Feedback
+"I appreciate the random logouts, really keeps me on my toes.",0,Negative Feedback
+The syntax highlighting in your editor is apparently based on random chance.,0,Negative Feedback
+Your quick start guide took me three days to decipher.,0,Negative Feedback
+"Thank you for the endless loading spinner, it is very hypnotic.",0,Negative Feedback
+"Wow, the deployment actually worked on the first try. Am I dreaming?",1,Positive Feedback
+I almost had a heart attack because the servers didn't crash today. Excellent job!,1,Positive Feedback
+"Finally, a release that does not require me to rewrite my entire codebase.",1,Positive Feedback
+I am genuinely terrified by how fast this new query optimization is.,1,Positive Feedback
+"Shockingly, the support team fixed my issue before I could even complain on Twitter.",1,Positive Feedback
+"Whoa, an update that actually improves the UX? What timeline is this?",1,Positive Feedback
+I am amazed that the migration script didn't corrupt anything. Kudos!,1,Positive Feedback
+Thank you for a billing interface that doesn't require a Ph.D. in accounting to understand.,1,Positive Feedback
+"Surprisingly, the uptime SLA was actually met this month. Keep it up.",1,Positive Feedback
+I am stunned; the new API patch is actually backward compatible.,1,Positive Feedback
+"It only took you three years, but this feature is exactly what we needed.",1,Positive Feedback
+"Good job on the docs, I didn't even have to guess the parameters this time.",1,Positive Feedback
+"The dashboard loads instantly now, did you guys finally buy better servers?",1,Positive Feedback
+"I am impressed, the automated scaling actually scaled instead of just crashing.",1,Positive Feedback
+"For once, I don't regret updating the dependency. Solid work.",1,Positive Feedback
+The data sync is so fast it finished before I could even take a sip of coffee.,1,Positive Feedback
+"I was prepared for a headache, but the integration was surprisingly painless.",1,Positive Feedback
+You actually listened to user feedback? I'm genuinely shocked and impressed.,1,Positive Feedback
+The new search algorithm actually finds what I am looking for. Incredible.,1,Positive Feedback
+"Hats off to the dev team, this might be the first bug-free release I've seen.",1,Positive Feedback
+I love the new feature so much I almost forgot how much I hated the old one.,1,Positive Feedback
+"Finally, an error message that actually tells me what went wrong!",1,Positive Feedback
+The performance improvements are so good I thought my metrics were broken.,1,Positive Feedback
+I am delightfully surprised that the mobile app is just as good as the desktop version.,1,Positive Feedback
+"Excellent support response, it felt like I was talking to an actual human being.",1,Positive Feedback
+The onboarding process was so smooth I didn't even need to contact support.,1,Positive Feedback
+"You finally added dark mode, my eyes are eternally grateful.",1,Positive Feedback
+The pricing structure is actually transparent. Did I stumble into an alternate reality?,1,Positive Feedback
+I am shocked by how easily I was able to restore from a backup.,1,Positive Feedback
+"The webhook reliability has been 100% this week, knocking on wood.",1,Positive Feedback
+"Great job simplifying the UI, it no longer looks like an airplane cockpit.",1,Positive Feedback
+The zero-downtime deployment actually resulted in zero downtime. Well done.,1,Positive Feedback
+I am pleasantly surprised that the cache clearing bug is finally squashed.,1,Positive Feedback
+"The customization options are fantastic, I can actually make it look decent.",1,Positive Feedback
+I can't believe how easy it was to provision a new cluster.,1,Positive Feedback
+"The memory footprint has been reduced drastically, my servers are very happy.",1,Positive Feedback
+You actually documented the edge cases. I am beyond impressed.,1,Positive Feedback
+The automated alerts saved us before the issue even hit production.,1,Positive Feedback
+Thank you for making the export format a standard CSV instead of proprietary junk.,1,Positive Feedback
+The accessibility improvements are genuinely fantastic. Great job.,1,Positive Feedback
+"I was expecting a disaster, but the major version upgrade was flawless.",1,Positive Feedback
+The community forums are actually helpful now. Who would have thought?,1,Positive Feedback
+"The sandbox environment perfectly mirrors production, which is a rare treat.",1,Positive Feedback
+"Excellent job on the real-time collaboration feature, it is buttery smooth.",1,Positive Feedback
+I am thrilled that the background workers aren't failing silently anymore.,1,Positive Feedback
+The rate limiting is very fair and gracefully implemented.,1,Positive Feedback
+"Finally, a single sign-on implementation that didn't make me want to cry.",1,Positive Feedback
+The new charting library makes our reports look incredibly professional.,1,Positive Feedback
+I am very happy that the API payload size was significantly optimized.,1,Positive Feedback
+"10/10 update, please give whoever coded this a raise immediately.",1,Positive Feedback
+"No rush, I am just losing thousands of dollars a minute over here.",2,Urgent Support
+"Take your time replying, I will just explain to my boss that the cloud evaporated.",2,Urgent Support
+"Whenever you are done playing ping-pong, our production database is down.",2,Urgent Support
+Just a minor detail: all of our clients are getting a 502 Bad Gateway right now.,2,Urgent Support
+I would love to get a response to my ticket before I retire.,2,Urgent Support
+"Don't panic, but our payment gateway is currently charging everyone triple.",2,Urgent Support
+It would be super awesome if the main server wasn't literally on fire right now.,2,Urgent Support
+"Hey guys, the system is completely unresponsive, but take your time, it's just my job on the line.",2,Urgent Support
+"I know it is Friday afternoon, but the entire cluster just died. Help.",2,Urgent Support
+Please fix the DNS routing issue before my CEO finds out and fires me.,2,Urgent Support
+"Awesome, the data center is unreachable. Anyone awake at support?",2,Urgent Support
+I guess I didn't need to process any transactions today anyway. Fix this ASAP!,2,Urgent Support
+URGENT: Your latest push just wiped out our entire user table.,2,Urgent Support
+We are completely dead in the water. A response would be mildly appreciated.,2,Urgent Support
+"Everything is broken. Send help, send a rollback, send whatever you have immediately.",2,Urgent Support
+The API is returning 404 for every single endpoint. Pls fix now.,2,Urgent Support
+I love that our SSL certificate expired despite auto-renew being on. Help immediately.,2,Urgent Support
+We are locked out of the admin panel and production is currently crashing.,2,Urgent Support
+Our background jobs are stuck in a dead loop and consuming 100% CPU. Urgent!,2,Urgent Support
+"Just a heads up, your security update completely blocked our IP range.",2,Urgent Support
+The load balancer is sending all traffic to a dead node. Please intervene!,2,Urgent Support
+I am begging you to rollback whatever you just deployed 5 minutes ago.,2,Urgent Support
+"Critical failure on the checkout page, nobody can buy anything!",2,Urgent Support
+We are losing data by the second because the primary database failed over incorrectly.,2,Urgent Support
+"I am sure you are busy, but our entire application is rendering a blank white page.",2,Urgent Support
+The storage volume just detached itself from the primary instance. SOS.,2,Urgent Support
+Your billing system just suspended our account by mistake. Restore it immediately!,2,Urgent Support
+We are experiencing a massive DDoS and your mitigation tool isn't kicking in.,2,Urgent Support
+CRITICAL: Passwords are being logged in plaintext after the last patch!,2,Urgent Support
+The webhook delivery system has completely halted. We are missing critical events.,2,Urgent Support
+"I'm sure the 503 Service Unavailable error is just a feature, but please turn it off.",2,Urgent Support
+All of our scheduled tasks failed to run last night. We need emergency support.,2,Urgent Support
+The memory leak is so bad our instances are OOM crashing every 5 minutes.,2,Urgent Support
+We cannot provision any new servers and the current ones are at capacity.,2,Urgent Support
+Just letting you know that our custom domain routing vanished into thin air.,2,Urgent Support
+We are currently facing a Sev-1 outage due to the gateway timeout errors.,2,Urgent Support
+The database migration script hung at 99% and now everything is locked.,2,Urgent Support
+Urgent help needed: the API rate limits are triggering after 1 request.,2,Urgent Support
+"The multi-tenant isolation just failed, users are seeing each other's data!",2,Urgent Support
+"I know it's 2 AM, but the authentication server is completely offline.",2,Urgent Support
+Our file uploads are silently failing and customers are furious. Fix this now.,2,Urgent Support
+We are getting a Connection Refused error on the primary redis cluster.,2,Urgent Support
+The content delivery network is caching private user data. Purge immediately!,2,Urgent Support
+The system is rejecting all valid API keys. We are at a standstill.,2,Urgent Support
+"Please escalate this ticket, our microservices can no longer communicate.",2,Urgent Support
+We just got a database corruption alert. I really hope your backups work.,2,Urgent Support
+The node cluster has split brain and data is diverging. Urgent assistance required.,2,Urgent Support
+A runaway process is eating all our bandwidth. We need a manual kill switch now.,2,Urgent Support
+The firewall rules mysteriously reset and blocked all incoming traffic.,2,Urgent Support
+Emergency: The disaster recovery failover did not work. We are completely down.,2,Urgent Support

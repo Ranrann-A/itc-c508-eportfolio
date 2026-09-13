@@ -10,8 +10,8 @@
       document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
     })();
   </script>
-    <meta name="description" content="Prelim activities, academic outputs, and reflections for ITC-C508 Deep Learning for Predictive Modeling.">
-    <title>Prelim Activities | ITC-C508 E-Portfolio</title>
+  <meta name="description" content="Prelim activities, academic outputs, and reflections for ITC-C508 ITE Elective 4: Deep Learning.">
+  <title>Prelim Activities | ITC-C508 E-Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -132,6 +132,45 @@
           </div>
         </div>
 
+        <div class="supporting-section">
+          <div class="supporting-heading">
+            <div>
+              <span class="section-label">Supporting Activity Files</span>
+              <h3>Training Evidence &amp; Test Results</h3>
+              <p>These files were used during PT-P1 and support the observations summarized in the IEEE report.</p>
+            </div>
+          </div>
+
+          <div class="evidence-figure">
+            <div class="evidence-image-wrap">
+              <img src="assets/supporting/PT-P1-Model-Info.png" alt="PT-P1 machine learning model information showing the trained Positive Praise, Negative Complaint, and Urgent Support classes" loading="lazy">
+            </div>
+            <div class="evidence-caption">
+              <span class="resource-type">Training Screenshot</span>
+              <div>
+                <h4>Model Training Information</h4>
+                <p>The training screen records the three classifier categories and the examples collected for each class before testing and refinement.</p>
+              </div>
+              <a class="text-link" href="assets/supporting/PT-P1-Model-Info.png" target="_blank" rel="noopener">View full image <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">XLSX</div>
+            <div class="resource-copy">
+              <span class="resource-type">Experiment Workbook</span>
+              <h4>PT-P1 Test Results &amp; Accuracy</h4>
+              <p>The spreadsheet contains the test phrases, expected and predicted classes, confidence scores, correctness checks, notes, and before-and-after refinement accuracy summaries used to evaluate the classifier.</p>
+              <div class="resource-meta">
+                <span>13 test cases</span>
+                <span>Before &amp; after refinement</span>
+                <span>Excel workbook</span>
+              </div>
+            </div>
+            <a class="btn btn-secondary resource-download" href="assets/supporting/PT-P1-Test-Results.xlsx" download>Download Excel</a>
+          </div>
+        </div>
+
         <div class="reflection-section">
           <div class="reflection-heading">
             <span class="section-label">Personal Reflection</span>
@@ -182,6 +221,79 @@
                 <a class="btn btn-primary" href="assets/documents/ADAME_PT-P2-IEEE.pdf" target="_blank" rel="noopener">View PDF</a>
               </div>
             </object>
+          </div>
+        </div>
+
+        <div class="supporting-section ptp2-supporting">
+          <div class="supporting-heading">
+            <div>
+              <span class="section-label">Supporting Activity Files</span>
+              <h3>Code, Experiment Log &amp; Training Dataset</h3>
+              <p>These are the working files used for PT-P2 and provide the technical evidence behind the model configuration, 21 training experiments, dataset expansion, and results discussed in the IEEE report.</p>
+            </div>
+          </div>
+
+          <div class="experiment-snapshot" aria-label="PT-P2 experiment summary">
+            <div>
+              <span>Training Runs</span>
+              <strong>21 experiments</strong>
+              <small>EXP-01 through EXP-21</small>
+            </div>
+            <div>
+              <span>Final Dataset</span>
+              <strong>345 text samples</strong>
+              <small>115 samples per category</small>
+            </div>
+            <div>
+              <span>Best Validation Accuracy</span>
+              <strong>84.62%</strong>
+              <small>EXP-18 · Ideal Fit</small>
+            </div>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">IPYNB</div>
+            <div class="resource-copy">
+              <span class="resource-type">Google Colab / Jupyter Notebook</span>
+              <h4>Neural Network Training &amp; Hyperparameters</h4>
+              <p>The notebook contains the PT-P2 implementation from data ingestion and preprocessing through configuration management, Keras model architecture, optimizer setup, model training and evaluation, and loss-curve visualization.</p>
+              <div class="resource-meta">
+                <span>6 learning modules</span>
+                <span>Keras Sequential model</span>
+                <span>Hyperparameter configuration</span>
+              </div>
+            </div>
+            <a class="btn btn-secondary resource-download" href="assets/supporting/PT-P2-Neural-Network-Training.ipynb" download>Download Notebook</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">XLSX</div>
+            <div class="resource-copy">
+              <span class="resource-type">Experiment Workbook</span>
+              <h4>FFBP Training Log</h4>
+              <p>The training log records all 21 experiments and the hyperparameters and evaluation results used to compare model behavior, including learning rate, optimizer, hidden neurons, loss, accuracy, precision, recall, F1-score, model-fit status, and experiment notes.</p>
+              <div class="resource-meta">
+                <span>21 experiments</span>
+                <span>EXP-18 best result</span>
+                <span>84.62% validation accuracy</span>
+              </div>
+            </div>
+            <a class="btn btn-secondary resource-download" href="assets/supporting/PT-P2-FFBP-Training-Log.xlsx" download>Download Excel</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">CSV</div>
+            <div class="resource-copy">
+              <span class="resource-type">Training Dataset</span>
+              <h4>SaaS Architecture Dataset</h4>
+              <p>The final dataset contains 345 labeled text samples used for the classifier, distributed evenly across Negative Feedback, Positive Feedback, and Urgent Support so the model can learn from a balanced set of examples.</p>
+              <div class="resource-meta">
+                <span>345 rows</span>
+                <span>3 balanced categories</span>
+                <span>115 samples each</span>
+              </div>
+            </div>
+            <a class="btn btn-secondary resource-download" href="assets/supporting/SaaS-Architecture-Dataset.csv" download>Download CSV</a>
           </div>
         </div>
 
