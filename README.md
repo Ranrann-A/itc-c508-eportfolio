@@ -32,7 +32,3 @@ A static GitHub Pages-ready academic e-portfolio for **Stephen Rainiel Adame** a
 6. GitHub will provide the public Pages URL after deployment.
 
 No framework or build step is required.
-
-## Source migration note
-
-The Home course expectation text and current About Me text were migrated from the existing Wix portfolio supplied for this project. The original Wix Prelim, Midterm, and Finals pages currently contain only their page titles, so the GitHub version uses editable academic activity templates rather than invented assignments or results.
