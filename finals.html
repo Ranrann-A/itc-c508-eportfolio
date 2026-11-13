@@ -10,52 +10,698 @@
       document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
     })();
   </script>
-  <meta name="description" content="Finals activities for ITC-C508 ITE Elective 4: Deep Learning.">
+  <meta name="description" content="Finals activities, chunking optimization, GPU benchmarking, and the LendSuri hybrid RAG chatbot project for ITC-C508 ITE Elective 4: Deep Learning.">
   <title>Finals Activities | ITC-C508 E-Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css?v=20260913-2">
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">DL</span><span class="brand-text">ITC-C508 E-Portfolio</span></a><button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="prelim.html">Prelim</a><a href="midterm.html">Midterm</a><a href="finals.html">Finals</a></nav></div></header>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">DL</span><span class="brand-text">ITC-C508 E-Portfolio</span></a>
+    <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="prelim.html">Prelim</a>
+      <a href="midterm.html">Midterm</a>
+      <a href="finals.html">Finals</a>
+    </nav>
+  </div>
+</header>
 
 <main>
-  <section class="page-hero"><div class="container"><span class="eyebrow">Semester Period 03</span><h1>Finals Activities</h1><p class="lead">This section will document future activities, major outputs or projects, screenshots, explanations, and my final reflection for ITC-C508.</p></div></section>
+  <section class="page-hero prelim-hero">
+    <div class="container">
+      <span class="eyebrow">Semester Period 03</span>
+      <h1>Finals Activities</h1>
+      <p class="lead">This section documents the Finals experiments and final group project for LendSuri in ITC-C508, covering FAISS/SEA-LION preparation (PT-F1), 12-configuration chunking evaluation (PT-F2), CPU vs. L4 GPU benchmarking (WW-F1 &amp; F2), and the final hybrid RAG chatbot (P-F1).</p>
+    </div>
+  </section>
 
-  <section class="section">
+  <section class="section prelim-section">
     <div class="container activity-stack">
-      <article class="activity-card">
-        <div class="activity-header"><span class="activity-kicker">Future Activity</span><h2>Activity Title</h2></div>
-        <div class="screenshot-placeholder"><div><strong>Add Screenshot Here</strong>Replace this placeholder when the activity is completed.</div></div>
-        <div class="activity-body">
-          <div class="detail-block"><h3>Activity Description</h3><p>[Add content here when available.]</p></div>
-          <div class="detail-block"><h3>Objective</h3><p>[Add content here when available.]</p></div>
-          <div class="detail-block"><h3>What I Did</h3><p>[Add content here when available.]</p></div>
-          <div class="detail-block"><h3>Results or Output</h3><p>[Add actual results here when available.]</p></div>
-          <div class="detail-block wide"><h3>Reflection</h3><p>[Add your reflection here when the activity is finished.]</p></div>
+      <article class="activity-card academic-entry" id="pt-f1-faiss-sealion-prep">
+        <div class="activity-header academic-entry-header">
+          <div>
+            <span class="activity-kicker">Activity 01 · Practical Exercise · Initial RAG Preparation</span>
+            <h2>PT-F1: FAISS Vector Store, SEA-LION Retrieval, and Corpus Preparation</h2>
+            <p class="entry-intro">Initial preparation for optimizing chunk size and overlap on the 126-page Member 2 Philippine SEC OLP corpus using FAISS vector indexing, all-MiniLM-L6-v2 embeddings, SEA-LION generation, and three difficulty-tiered test questions.</p>
+          </div>
+          <span class="entry-status">Finals Output 01</span>
+        </div>
+
+        <div class="entry-meta" aria-label="Activity information">
+          <div><span>Course</span><strong>ITC-C508</strong></div>
+          <div><span>Course Title</span><strong>ITE Elective 4: Deep Learning</strong></div>
+          <div><span>Student</span><strong>Stephen Rainiel Adame (Member 2)</strong></div>
+        </div>
+
+        <div class="document-section">
+          <div class="document-heading">
+            <div>
+              <span class="section-label">Corpus Document</span>
+              <h3>LendSuri Member 2 SEC OLP Corpus</h3>
+              <p>The 126-page researcher-prepared PDF used as the knowledge base for PT-F1, containing dated 2026 OLP registry snapshots, 2021 historical records, SEC advisories, and complaint guidance.</p>
+            </div>
+            <a class="btn btn-secondary document-button" href="assets/documents/LendSuri_Member_2_Corpus.pdf" target="_blank" rel="noopener">Open Full PDF</a>
+          </div>
+
+          <div class="pdf-frame" aria-label="LendSuri Member 2 Corpus PDF preview">
+            <object data="assets/documents/LendSuri_Member_2_Corpus.pdf" type="application/pdf">
+              <div class="pdf-fallback">
+                <strong>PDF preview is not available in this browser.</strong>
+                <p>You can still view the complete corpus document using the button below.</p>
+                <a class="btn btn-primary" href="assets/documents/LendSuri_Member_2_Corpus.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </object>
+          </div>
+        </div>
+
+        <div class="supporting-section artifact-section ptp2-supporting">
+          <div class="supporting-heading artifact-heading">
+            <div>
+              <span class="section-label">Supporting Activity Files</span>
+              <h3>Colab Notebook &amp; RAG Testing Log</h3>
+              <p>The working FAISS and SEA-LION notebook alongside the structured 18-row testing log covering 3 question levels, 4 initial chunking settings, and 3 RAG prompts.</p>
+            </div>
+            <span class="artifact-count">2 supporting files</span>
+          </div>
+
+          <div class="experiment-snapshot" aria-label="PT-F1 setup summary">
+            <div>
+              <span>Corpus Size</span>
+              <strong>126 Pages</strong>
+              <small>Member 2 SEC OLP records</small>
+            </div>
+            <div>
+              <span>Testing Plan</span>
+              <strong>18 Runs</strong>
+              <small>4 chunk configs · 3 RAG prompts</small>
+            </div>
+            <div>
+              <span>Question Tiers</span>
+              <strong>Easy · Avg · Diff</strong>
+              <small>Fido.ph · Asteria · Moneycat</small>
+            </div>
+          </div>
+
+          <div class="resource-grid resource-grid-two">
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge notebook-badge">IPYNB</span>
+                  <div>
+                    <span class="resource-type">Jupyter Notebook</span>
+                    <h4>FAISS Vector Store &amp; SEA-LION Retrieval</h4>
+                  </div>
+                </div>
+                <p>Implements PDF text extraction, configurable chunk size and overlap, MiniLM embedding generation, FAISS indexing, and SEA-LION RAG prompting.</p>
+                <div class="resource-meta compact-meta">
+                  <span>FAISS</span>
+                  <span>SEA-LION</span>
+                  <span>Top-K = 3</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Google Colab / Jupyter</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/PT-F1-Faiss-Vector-Store-SEA-LION.ipynb" download>Download Notebook</a>
+              </div>
+            </article>
+
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge excel-badge">XLSX</span>
+                  <div>
+                    <span class="resource-type">Testing Workbook</span>
+                    <h4>Member 2 RAG Testing Log</h4>
+                  </div>
+                </div>
+                <p>Tracks the three difficulty-tiered questions (M2-Q1 to M2-Q3), expected answers, evidence record IDs, three prompt templates (P1 to P3), and initial chunking trials.</p>
+                <div class="resource-meta compact-meta">
+                  <span>18 test rows</span>
+                  <span>3 question levels</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Microsoft Excel workbook</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/PT-F1-RAG-Testing-Log.xlsx" download>Download Excel</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="reflection-heading">
+            <span class="section-label">Personal Reflection</span>
+            <h3>What I Learned</h3>
+          </div>
+
+          <div class="reflection-copy">
+            <p>Working on <strong>PT-F1</strong> helped me set up the actual retrieval pipeline we needed before running full chunking experiments for LendSuri. Instead of jumping straight into tuning parameters, I had to organize my assigned 126-page Member 2 SEC corpus, build the FAISS vector store with <code>all-MiniLM-L6-v2</code> embeddings, and connect it to the SEA-LION language model. Preparing the notebook with configurable <code>CHUNK_SIZE</code> and <code>CHUNK_OVERLAP</code> variables also made it much easier to keep later tests consistent.</p>
+
+            <p>One of the most helpful parts of this activity was designing the three test questions by difficulty level. The Easy question checked a single record for Fido.ph, the Average question required matching Asteria and Cashbazaar across both the 2021 and 2026 SEC lists, and the Difficult question tested whether the retriever could pull both registry records and a newer impersonation advisory for Moneycat. Seeing how question difficulty depends on how many evidence passages are needed made the testing log much more structured than just asking random prompts.</p>
+
+            <p>Overall, PT-F1 showed me that good RAG evaluation starts before the model even generates an answer. Writing clear reference answers, mapping exact PDF page numbers, and separating prompt checks from retrieval checks gave me a solid baseline to build on for the next experiment.</p>
+          </div>
         </div>
       </article>
 
-      <article class="activity-card">
-        <div class="activity-header"><span class="activity-kicker">Major Final Output / Project</span><h2>Project Title</h2></div>
-        <div class="screenshot-placeholder"><div><strong>Add Project Screenshot Here</strong>Final model, dashboard, notebook, results, presentation, or other major course output.</div></div>
-        <div class="activity-body">
-          <div class="detail-block"><h3>Project Overview</h3><p>[Explain the final output or project here.]</p></div>
-          <div class="detail-block"><h3>Goal</h3><p>[State the problem, goal, or course requirement.]</p></div>
-          <div class="detail-block"><h3>Approach</h3><p>[Describe the model, workflow, tools, or experiment setup.]</p></div>
-          <div class="detail-block"><h3>Final Output</h3><p>[Document the actual output and results here.]</p></div>
-          <div class="detail-block wide"><h3>Project Reflection</h3><p>[Reflect on the overall process, what worked, what did not, and what you learned.]</p></div>
+      <article class="activity-card academic-entry" id="pt-f2-chunking-experiment">
+        <div class="activity-header academic-entry-header">
+          <div>
+            <span class="activity-kicker">Activity 02 · Practical Exercise · Chunking &amp; Retrieval Evaluation</span>
+            <h2>PT-F2: Comparing Chunk Size and Overlap for SEC Record Retrieval</h2>
+            <p class="entry-intro">A 12-configuration experiment evaluating character chunk size and overlap on the cleaned 126-page Member 2 corpus using FAISS IndexFlatIP, all-MiniLM-L6-v2, and Top-3 Precision, Recall, and MRR.</p>
+          </div>
+          <span class="entry-status">Finals Output 02</span>
+        </div>
+
+        <div class="entry-meta" aria-label="Activity information">
+          <div><span>Course</span><strong>ITC-C508</strong></div>
+          <div><span>Course Title</span><strong>ITE Elective 4: Deep Learning</strong></div>
+          <div><span>Student</span><strong>Stephen Rainiel Adame</strong></div>
+        </div>
+
+        <div class="document-section">
+          <div class="document-heading">
+            <div>
+              <span class="section-label">Submitted Document</span>
+              <h3>PT-F2 IEEE Technical Report</h3>
+              <p>The complete two-page IEEE report is available below. It documents all 12 chunking configurations (C1 to C12), difficulty-level retrieval scores, and the trade-off between chunk count and evidence coverage.</p>
+            </div>
+            <a class="btn btn-secondary document-button" href="assets/documents/ADAME_LendSuri_PT_F2_IEEE.pdf" target="_blank" rel="noopener">Open Full PDF</a>
+          </div>
+
+          <div class="pdf-frame" aria-label="PT-F2 IEEE Report PDF preview">
+            <object data="assets/documents/ADAME_LendSuri_PT_F2_IEEE.pdf" type="application/pdf">
+              <div class="pdf-fallback">
+                <strong>PDF preview is not available in this browser.</strong>
+                <p>You can still view the complete document using the button below.</p>
+                <a class="btn btn-primary" href="assets/documents/ADAME_LendSuri_PT_F2_IEEE.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </object>
+          </div>
+        </div>
+
+        <div class="supporting-section artifact-section ptp2-supporting">
+          <div class="supporting-heading artifact-heading">
+            <div>
+              <span class="section-label">Supporting Activity Files</span>
+              <h3>Experiment Notebook, Log &amp; Cleaned Corpus</h3>
+              <p>The complete Colab notebook, 12-configuration Excel experiment log, and cleaned 126-page Member 2 corpus used in PT-F2.</p>
+            </div>
+            <span class="artifact-count">3 supporting files</span>
+          </div>
+
+          <div class="experiment-snapshot" aria-label="PT-F2 experiment summary">
+            <div>
+              <span>Configurations</span>
+              <strong>12 Settings</strong>
+              <small>C1 to C12 · FAISS IndexFlatIP</small>
+            </div>
+            <div>
+              <span>Best Setting (C12)</span>
+              <strong>1,200 / 200</strong>
+              <small>194 chunks · Recall@3 = 1.000</small>
+            </div>
+            <div>
+              <span>C12 Metrics</span>
+              <strong>P@3 0.667 · MRR 1.000</strong>
+              <small>Full coverage on Moneycat Q3</small>
+            </div>
+          </div>
+
+          <div class="resource-grid">
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge notebook-badge">IPYNB</span>
+                  <div>
+                    <span class="resource-type">Jupyter Notebook</span>
+                    <h4>PT-F2 Chunking Experiment</h4>
+                  </div>
+                </div>
+                <p>Runs all 12 chunk-size and overlap settings against the three fixed questions using FAISS IndexFlatIP and computes Precision@3, Recall@3, and MRR@3.</p>
+                <div class="resource-meta compact-meta">
+                  <span>12 configs</span>
+                  <span>FAISS IndexFlatIP</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Google Colab / Jupyter</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/PT-F2-LendSuri-Chunking.ipynb" download>Download Notebook</a>
+              </div>
+            </article>
+
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge excel-badge">XLSX</span>
+                  <div>
+                    <span class="resource-type">Experiment Workbook</span>
+                    <h4>PT-F2 Experiment Log</h4>
+                  </div>
+                </div>
+                <p>Records chunk counts, retrieved page ranks, relevance checks, and per-difficulty Precision@3, Recall@3, and MRR@3 across C1 to C12.</p>
+                <div class="resource-meta compact-meta">
+                  <span>C1 to C12</span>
+                  <span>C12 best recall</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Microsoft Excel workbook</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/PT-F2-Experiment-Log.xlsx" download>Download Excel</a>
+              </div>
+            </article>
+
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge">PDF</span>
+                  <div>
+                    <span class="resource-type">Cleaned Dataset</span>
+                    <h4>Member 2 Corpus (Cleaned)</h4>
+                  </div>
+                </div>
+                <p>The cleaned 126-page text-extractable PDF with one normalized SEC record per page used for reproducible chunking runs.</p>
+                <div class="resource-meta compact-meta">
+                  <span>126 pages</span>
+                  <span>1 record/page</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Cleaned PDF corpus</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/PT-F2-Member-2-Corpus-CLEANED.pdf" download>Download PDF</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="reflection-heading">
+            <span class="section-label">Personal Reflection</span>
+            <h3>What I Learned</h3>
+          </div>
+
+          <div class="reflection-copy">
+            <p>Working on <strong>PT-F2</strong> showed me how much chunk size and overlap can change what a RAG system actually retrieves, even when the dataset, embedding model, and questions stay the same. Testing 12 configurations from 300-character chunks up to 1,200-character chunks made it clear that smaller chunks are not always better. At 300 characters, increasing the overlap from 0 to 60 raised the chunk count to 574, yet Recall@3 dropped from 0.778 to 0.444 because top-3 retrieval kept pulling multiple fragments from the same Moneycat advisory instead of bringing in the other required records.</p>
+
+            <p>Configuration C12 (1,200 characters with 200 overlap) gave the strongest result in this individual test, reaching Precision@3 of 0.667, Recall@3 of 1.000, and MRR@3 of 1.000 using only 194 chunks. It was the only setting that retrieved all three required evidence units for the difficult Moneycat question across pages 111, 28, and 83. At the same time, reviewing the workbook carefully taught me to double-check manual relevance labels, since I noticed a few C10 label mismatches and an inconsistent C11 index-size entry that needed verification.</p>
+
+            <p>Overall, PT-F2 made information retrieval metrics like Precision@3, Recall@3, and MRR@3 feel practical rather than abstract. Instead of guessing a chunk size, I could see directly how keeping each SEC record intact inside larger chunks improved evidence coverage for multi-document questions.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity-card academic-entry" id="ww-f1-f2-gpu-optimization">
+        <div class="activity-header academic-entry-header">
+          <div>
+            <span class="activity-kicker">Activity 03 · Written Work · Optimization &amp; Hardware Benchmarking (QuantumStack)</span>
+            <h2>WW-F1 &amp; F2: Optimizing RAG Parameters and Comparing CPU vs. L4 GPU Performance</h2>
+            <p class="entry-intro">A group benchmark combining all three members' datasets (379 SEC OLP records) across three chunking settings to compare High-RAM CPU and NVIDIA L4 GPU inference speed, answer quality, and conversational memory.</p>
+          </div>
+          <span class="entry-status">Finals Output 03</span>
+        </div>
+
+        <div class="entry-meta" aria-label="Activity information">
+          <div><span>Course</span><strong>ITC-C508</strong></div>
+          <div><span>Course Title</span><strong>ITE Elective 4: Deep Learning</strong></div>
+          <div><span>Group</span><strong>QuantumStack (Adame, Nerido, Gutierrez)</strong></div>
+        </div>
+
+        <div class="document-section">
+          <div class="document-heading">
+            <div>
+              <span class="section-label">Submitted Document</span>
+              <h3>WW-F1 &amp; F2 Group Experiment Report</h3>
+              <p>The complete two-page report is available below. It documents the three chunking configurations (500/100, 1,200/200, and 800/100), High-RAM CPU vs. NVIDIA L4 GPU latency, answer accuracy across nine questions, and the conversation-aware interface.</p>
+            </div>
+            <a class="btn btn-secondary document-button" href="assets/documents/QuantumStack_RAG_Experiment_Report.pdf" target="_blank" rel="noopener">Open Full PDF</a>
+          </div>
+
+          <div class="pdf-frame" aria-label="WW-F1 and F2 Experiment Report PDF preview">
+            <object data="assets/documents/QuantumStack_RAG_Experiment_Report.pdf" type="application/pdf">
+              <div class="pdf-fallback">
+                <strong>PDF preview is not available in this browser.</strong>
+                <p>You can still view the complete document using the button below.</p>
+                <a class="btn btn-primary" href="assets/documents/QuantumStack_RAG_Experiment_Report.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </object>
+          </div>
+        </div>
+
+        <div class="supporting-section artifact-section ptp2-supporting">
+          <div class="supporting-heading artifact-heading">
+            <div>
+              <span class="section-label">Supporting Activity Files</span>
+              <h3>Conversational Notebook &amp; Benchmark Log</h3>
+              <p>The group's Colab notebook with session-local conversation memory alongside the Excel benchmarking log comparing High-RAM CPU and L4 GPU runs.</p>
+            </div>
+            <span class="artifact-count">2 supporting files</span>
+          </div>
+
+          <div class="experiment-snapshot" aria-label="WW-F1 and F2 benchmark summary">
+            <div>
+              <span>Combined Corpus</span>
+              <strong>379 Records</strong>
+              <small>3 member PDFs · 9 fixed questions</small>
+            </div>
+            <div>
+              <span>L4 GPU (C2 1,200/200)</span>
+              <strong>10.87s Mean</strong>
+              <small>8/9 correct · 2.12s indexing</small>
+            </div>
+            <div>
+              <span>Speedup vs. CPU</span>
+              <strong>44.72x</strong>
+              <small>vs. 485.94s High-RAM CPU</small>
+            </div>
+          </div>
+
+          <div class="resource-grid resource-grid-two">
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge notebook-badge">IPYNB</span>
+                  <div>
+                    <span class="resource-type">Jupyter Notebook</span>
+                    <h4>WW-F1 &amp; F2 Conversational RAG Notebook</h4>
+                  </div>
+                </div>
+                <p>Runs ChromaDB retrieval with SEA-LION-v3-8B-IT and includes the interactive Q&amp;A interface with 800-token session history and context proof diagnostics.</p>
+                <div class="resource-meta compact-meta">
+                  <span>ChromaDB</span>
+                  <span>NVIDIA L4</span>
+                  <span>Session Memory</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Google Colab / Jupyter</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/WW-F1-F2-ConversationalChat.ipynb" download>Download Notebook</a>
+              </div>
+            </article>
+
+            <article class="artifact-card artifact-card-file">
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge excel-badge">XLSX</span>
+                  <div>
+                    <span class="resource-type">Benchmark Workbook</span>
+                    <h4>WW-F1 &amp; F2 Experiment Results</h4>
+                  </div>
+                </div>
+                <p>Records indexing times, per-question response latencies, and correctness scores across C1, C2, and C3 on both High-RAM CPU and NVIDIA L4 GPU.</p>
+                <div class="resource-meta compact-meta">
+                  <span>CPU vs. L4 GPU</span>
+                  <span>44.72x speedup</span>
+                </div>
+              </div>
+              <div class="artifact-card-footer">
+                <span class="artifact-note">Microsoft Excel workbook</span>
+                <a class="btn btn-secondary resource-download" href="assets/supporting/WW-F1-F2-Experiment-Results.xlsx" download>Download Excel</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="reflection-heading">
+            <span class="section-label">Personal Reflection</span>
+            <h3>What I Learned</h3>
+          </div>
+
+          <div class="reflection-copy">
+            <p>For <strong>WW-F1 &amp; F2</strong>, my main responsibilities were setting up the Excel testing log so our group could record every run consistently, coordinating with my groupmates to execute the benchmarks, and researching which Google Colab GPU runtime we should use. Our first attempt on the default free-tier Colab CPU timed out after about 40 minutes without finishing even one answer, which made it clear we needed a dedicated GPU runtime to test an 8-billion-parameter model like <code>Llama-SEA-LION-v3-8B-IT</code>.</p>
+
+            <p>After comparing Colab's runtime options, I recommended the <strong>NVIDIA L4</strong> because it offered the cheapest compute-unit rate for a GPU capable of handling our workload, especially compared to an A100. Beyond saving compute units, the L4 gave us 24 GB of VRAM (around 22.5 GB usable in Colab, compared to 16 GB on a T4), which gave the 8B model, embeddings, and prompt context enough headroom without memory errors. Its Ada Lovelace Tensor Cores with FP16 and FP8 support are also built for low-latency inference, and in practice it brought our mean response time on C2 down to 10.87 seconds compared to 485.94 seconds on High-RAM CPU, a 44.72x speedup.</p>
+
+            <p>Organizing the testing log also taught me to be careful when interpreting group benchmark results. Even though C2 (1,200/200) achieved the highest speedup and 8/9 accuracy on the L4, the 0.02-second difference between C2 and C3 on GPU was too small to treat as a real speed advantage without more trials, and sampling variation could also affect answer quality between runs. Separating the timed hardware benchmarks from the later conversation-aware chat interface kept our findings honest and easy to verify.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity-card academic-entry" id="p-f1-lendsuri-final-project">
+        <div class="activity-header academic-entry-header">
+          <div>
+            <span class="activity-kicker">Activity 04 · Final Group Project · Hybrid RAG Application (QuantumStack)</span>
+            <h2>P-F1: Development and Evaluation of LendSuri (Hybrid Semantic + BM25 RAG Chatbot)</h2>
+            <p class="entry-intro">The final capstone-style course project combining 379 SEC OLP records, persistent ChromaDB indexing, BM25 + semantic Reciprocal Rank Fusion, exact platform-name boosting, and a Colab-hosted HTML/CSS/JS chat interface.</p>
+          </div>
+          <span class="entry-status">Finals Output 04</span>
+        </div>
+
+        <div class="entry-meta" aria-label="Activity information">
+          <div><span>Course</span><strong>ITC-C508</strong></div>
+          <div><span>Course Title</span><strong>ITE Elective 4: Deep Learning</strong></div>
+          <div><span>Group</span><strong>QuantumStack (Adame, Nerido, Gutierrez)</strong></div>
+        </div>
+
+        <div class="document-section">
+          <div class="document-heading">
+            <div>
+              <span class="section-label">Submitted Document</span>
+              <h3>P-F1 Final IEEE Project Report</h3>
+              <p>The complete four-page IEEE report is available below. It covers the full LendSuri architecture, C1 vs. C2 vs. C3 chunking selection, baseline vs. improved hybrid RAG evaluation across 12 frozen questions, and UI integration.</p>
+            </div>
+            <a class="btn btn-secondary document-button" href="assets/documents/QuantumStack_LendSuri_IEEE_Report.pdf" target="_blank" rel="noopener">Open Full PDF</a>
+          </div>
+
+          <div class="pdf-frame" aria-label="P-F1 LendSuri Final IEEE Report PDF preview">
+            <object data="assets/documents/QuantumStack_LendSuri_IEEE_Report.pdf" type="application/pdf">
+              <div class="pdf-fallback">
+                <strong>PDF preview is not available in this browser.</strong>
+                <p>You can still view the complete report using the button below.</p>
+                <a class="btn btn-primary" href="assets/documents/QuantumStack_LendSuri_IEEE_Report.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </object>
+          </div>
+        </div>
+
+        <div class="supporting-section artifact-section ptp2-supporting">
+          <div class="supporting-heading artifact-heading">
+            <div>
+              <span class="section-label">Supporting Activity Files &amp; UI</span>
+              <h3>Chatbot Interface, Run Package, Notebooks &amp; Logs</h3>
+              <p>Screenshots of the working LendSuri interface alongside the runnable Colab UI notebook, required checkpoint upload archive, D3 pipeline notebook, experiment logs, and reviewed evaluation scoring.</p>
+            </div>
+            <span class="artifact-count">7 supporting items</span>
+          </div>
+
+          <div class="experiment-snapshot" aria-label="P-F1 final evaluation summary">
+            <div>
+              <span>Selected Config (C1)</span>
+              <strong>500 / 100</strong>
+              <small>1,148 vectors · 59.26% P@3</small>
+            </div>
+            <div>
+              <span>Mean Correctness</span>
+              <strong>87.5%</strong>
+              <small>Up from 62.5% baseline</small>
+            </div>
+            <div>
+              <span>Grounded / Hallucination</span>
+              <strong>75.0% / 25.0%</strong>
+              <small>4/4 unanswerable abstentions</small>
+            </div>
+          </div>
+
+          <div class="proposal-compare-grid" style="margin-bottom: 18px;">
+            <article class="artifact-card artifact-card-visual">
+              <div class="artifact-preview">
+                <img src="assets/supporting/P-F1-Start-Page.png" alt="LendSuri chatbot landing page interface showing the welcome screen and SEC record retrieval overview" loading="lazy">
+              </div>
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge image-badge">PNG</span>
+                  <div>
+                    <span class="resource-type">UI Screenshot</span>
+                    <h4>LendSuri Start Page</h4>
+                  </div>
+                </div>
+                <p>Landing screen of the Colab-hosted HTML/CSS/JS interface introducing LendSuri's bounded SEC OLP record scope.</p>
+                <div class="artifact-actions">
+                  <span class="artifact-note">Frontend interface</span>
+                  <a class="artifact-link" href="assets/supporting/P-F1-Start-Page.png" target="_blank" rel="noopener">Open full image <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="artifact-card artifact-card-visual">
+              <div class="artifact-preview">
+                <img src="assets/supporting/P-F1-Chatbot-Screen.png" alt="LendSuri active chat screen showing grounded SEC OLP response with cited source records" loading="lazy">
+              </div>
+              <div class="artifact-card-body">
+                <div class="artifact-title-row">
+                  <span class="file-badge image-badge">PNG</span>
+                  <div>
+                    <span class="resource-type">UI Screenshot</span>
+                    <h4>LendSuri Active Chat Screen</h4>
+                  </div>
+                </div>
+                <p>Live chat view connected to the hybrid RAG backend, displaying user queries, grounded answers, and source citations.</p>
+                <div class="artifact-actions">
+                  <span class="artifact-note">Live Colab backend</span>
+                  <a class="artifact-link" href="assets/supporting/P-F1-Chatbot-Screen.png" target="_blank" rel="noopener">Open full image <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="resource-group">
+            <div class="resource-group-head">
+              <h4>1. Run the Live Chatbot in Google Colab (2 Required Files)</h4>
+              <p>To launch the LendSuri web interface, open the notebook below in Google Colab and upload the checkpoint ZIP when prompted.</p>
+            </div>
+            <div class="resource-grid resource-grid-two">
+              <article class="artifact-card artifact-card-file">
+                <div class="artifact-card-body">
+                  <div class="artifact-title-row">
+                    <span class="file-badge notebook-badge">IPYNB</span>
+                    <div>
+                      <span class="resource-type">Step 1 · Application Notebook</span>
+                      <h4>LendSuri Final Chatbot With UI</h4>
+                    </div>
+                  </div>
+                  <p><strong>What it is:</strong> Main Colab notebook that serves the HTML/CSS/JS chat interface. <strong>What it is for:</strong> Running the live LendSuri chatbot with hybrid semantic + BM25 search.</p>
+                  <div class="resource-meta compact-meta">
+                    <span>Hybrid RRF</span>
+                    <span>Colab UI</span>
+                  </div>
+                </div>
+                <div class="artifact-card-footer">
+                  <span class="artifact-note">Open in Google Colab</span>
+                  <a class="btn btn-secondary resource-download" href="assets/supporting/P-F1-LendSuri-Final-Chatbot-With-UI.ipynb" download>Download Notebook</a>
+                </div>
+              </article>
+
+              <article class="artifact-card artifact-card-file">
+                <div class="artifact-card-body">
+                  <div class="artifact-title-row">
+                    <span class="file-badge">ZIP</span>
+                    <div>
+                      <span class="resource-type">Step 2 · Required Upload File</span>
+                      <h4>Checkpoint &amp; Run Evidence Package</h4>
+                    </div>
+                  </div>
+                  <p><strong>What it is:</strong> Pre-built ChromaDB vector store (1,148 vectors) and verified file hashes. <strong>What it is for:</strong> Upload this ZIP into the UI notebook so it can run without re-indexing.</p>
+                  <div class="resource-meta compact-meta">
+                    <span>1,148 vectors</span>
+                    <span>Required for UI</span>
+                  </div>
+                </div>
+                <div class="artifact-card-footer">
+                  <span class="artifact-note">Upload inside Colab</span>
+                  <a class="btn btn-secondary resource-download" href="assets/supporting/P-F1-LendSuri-Checkpoint-and-Run-Evidence.zip" download>Download ZIP</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="resource-group">
+            <div class="resource-group-head">
+              <h4>2. Reproducibility Code, Experiment Logs &amp; Evaluation</h4>
+              <p>Supporting technical files documenting how the C1 vector store was built, logged, and scored against the 12-question test set.</p>
+            </div>
+            <div class="resource-grid">
+              <article class="artifact-card artifact-card-file">
+                <div class="artifact-card-body">
+                  <div class="artifact-title-row">
+                    <span class="file-badge notebook-badge">IPYNB</span>
+                    <div>
+                      <span class="resource-type">Reproducibility Code</span>
+                      <h4>C1 Final Config Pipeline</h4>
+                    </div>
+                  </div>
+                  <p><strong>What it is:</strong> Core C1 (500/100) indexing and SEA-LION notebook. <strong>What it is for:</strong> Rebuilding and verifying the ChromaDB index from the three source PDFs.</p>
+                  <div class="resource-meta compact-meta">
+                    <span>C1 (500/100)</span>
+                    <span>ChromaDB</span>
+                  </div>
+                </div>
+                <div class="artifact-card-footer">
+                  <span class="artifact-note">Google Colab / Jupyter</span>
+                  <a class="btn btn-secondary resource-download" href="assets/supporting/P-F1-D3-ConfigFinal.ipynb" download>Download Notebook</a>
+                </div>
+              </article>
+
+              <article class="artifact-card artifact-card-file">
+                <div class="artifact-card-body">
+                  <div class="artifact-title-row">
+                    <span class="file-badge excel-badge">XLSX</span>
+                    <div>
+                      <span class="resource-type">Execution Logs</span>
+                      <h4>Hybrid Experiment Logs</h4>
+                    </div>
+                  </div>
+                  <p><strong>What it is:</strong> Structured workbook of pipeline timings and settings. <strong>What it is for:</strong> Auditing model parameters, checkpoint hashes, and hybrid RAG runs.</p>
+                  <div class="resource-meta compact-meta">
+                    <span>Run logs</span>
+                    <span>Checkpoints</span>
+                  </div>
+                </div>
+                <div class="artifact-card-footer">
+                  <span class="artifact-note">Microsoft Excel workbook</span>
+                  <a class="btn btn-secondary resource-download" href="assets/supporting/P-F1-D4-Hybrid-Experiment-Logs.xlsx" download>Download Excel</a>
+                </div>
+              </article>
+
+              <article class="artifact-card artifact-card-file">
+                <div class="artifact-card-body">
+                  <div class="artifact-title-row">
+                    <span class="file-badge excel-badge">XLSX</span>
+                    <div>
+                      <span class="resource-type">Evaluation Scoring</span>
+                      <h4>Reviewed Baseline vs. Hybrid</h4>
+                    </div>
+                  </div>
+                  <p><strong>What it is:</strong> 12-question manual scoring sheet. <strong>What it is for:</strong> Comparing baseline (62.5%) vs. hybrid RAG (87.5%) correctness and groundedness.</p>
+                  <div class="resource-meta compact-meta">
+                    <span>12 questions</span>
+                    <span>87.5% accuracy</span>
+                  </div>
+                </div>
+                <div class="artifact-card-footer">
+                  <span class="artifact-note">Microsoft Excel workbook</span>
+                  <a class="btn btn-secondary resource-download" href="assets/supporting/P-F1-D5-Reviewed-Scoring.xlsx" download>Download Excel</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="reflection-heading">
+            <span class="section-label">Personal Reflection</span>
+            <h3>What I Learned</h3>
+          </div>
+
+          <div class="reflection-copy">
+            <p>Building <strong>LendSuri</strong> for our final project pushed me to connect every part of the RAG pipeline into a working, auditable system. On the technical side, I handled the core C1 ChromaDB and <code>Llama-SEA-LION-v3-8B-IT</code> implementation, maintained the experiment logs and exported vector-store checkpoints, and connected my groupmate's HTML/CSS/JS design to the live Colab backend. When our initial baseline only reached 62.5% correctness and 41.7% groundedness, I upgraded retrieval by combining semantic search with BM25 over reconstructed record pages using Reciprocal Rank Fusion and exact platform-name boosting. That change lifted mean correctness to 87.5%, raised groundedness to 75.0%, and cut hallucination flags from 58.3% down to 25.0%, while still abstaining on all four unanswerable questions.</p>
+
+            <p>During development, I also used generative AI tools like ChatGPT to help with planning, troubleshooting Python and Colab errors, drafting and refining code for the hybrid retriever and UI integration, and organizing experiment records. At the same time, I made sure never to treat AI suggestions as actual experimental results. Every claim, retrieved record, and metric had to be checked directly against the 379 source PDF records, real Colab executions, and our reviewed evaluation sheets so that recorded limitations and errors were reported honestly.</p>
+
+            <p>Looking at the finished chatbot, the biggest lesson for me was that reliable AI engineering is mostly about discipline and verification. Saving persistent checkpoints, hashing source files, keeping unanswerable test cases in the evaluation set, and testing the live UI end to end made LendSuri feel like a real, reproducible software system rather than a quick notebook demo.</p>
+          </div>
         </div>
       </article>
 
       <section class="final-reflection">
         <span class="eyebrow" style="background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); color: #fff;">Final Course Reflection</span>
         <h2>My Reflection on ITC-C508</h2>
-        <p>[Use this space for your final course reflection. You can discuss how your understanding of deep learning and predictive modeling changed throughout the semester, which activities had the biggest impact on you, and what skills or ideas you want to continue developing.]</p>
+        <p>Looking back across Prelim, Midterm, and Finals, ITC-C508 changed how I think about building AI and deep learning systems. In Prelim, I started with basic NLP concepts, a no-code text classifier, and Keras feedforward neural networks, where I learned that clean, representative training data matters just as much as hyperparameters. In Midterm, implementing a RAG hallucination stress-test and revising our rejected V1 project proposal into LendSuri taught me how important it is to narrow a problem statement and enforce strict prompt and retrieval boundaries before writing code.</p>
+        <p>By Finals, those foundations came together in a complete end-to-end project. Running 12 chunking configurations, benchmarking High-RAM CPU against the NVIDIA L4 GPU, and upgrading LendSuri to hybrid semantic and BM25 retrieval showed me that real-world performance depends on measuring every change carefully instead of guessing. Leaving the course, I feel much more confident designing, debugging, evaluating, and honestly documenting AI systems from raw datasets all the way to a working user interface.</p>
       </section>
     </div>
   </section>
 </main>
 
-<footer class="site-footer"><div class="container footer-row"><span>Stephen Rainiel Adame · ITC-C508</span><span>Finals Course Work · <span data-year></span></span></div></footer>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>Stephen Rainiel Adame · ITC-C508</span>
+    <span>Finals Course Work · <span data-year></span></span>
+  </div>
+</footer>
 <script src="assets/script.js?v=20260913-2"></script>
 </body>
 </html>

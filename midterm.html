@@ -10,58 +10,210 @@
       document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
     })();
   </script>
-  <meta name="description" content="Midterm activities for ITC-C508 ITE Elective 4: Deep Learning.">
+  <meta name="description" content="Midterm activities, Retrieval-Augmented Generation experiments, project proposals, and reflections for ITC-C508 ITE Elective 4: Deep Learning.">
   <title>Midterm Activities | ITC-C508 E-Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css?v=20260913-2">
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">DL</span><span class="brand-text">ITC-C508 E-Portfolio</span></a><button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="prelim.html">Prelim</a><a href="midterm.html">Midterm</a><a href="finals.html">Finals</a></nav></div></header>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">DL</span><span class="brand-text">ITC-C508 E-Portfolio</span></a>
+    <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="prelim.html">Prelim</a>
+      <a href="midterm.html">Midterm</a>
+      <a href="finals.html">Finals</a>
+    </nav>
+  </div>
+</header>
 
 <main>
-  <section class="page-hero"><div class="container"><span class="eyebrow">Semester Period 02</span><h1>Midterm Activities</h1><p class="lead">This section is designed for deeper technical work, including neural network training, experiments, model comparisons, graphs, validation results, and written reflections.</p></div></section>
+  <section class="page-hero prelim-hero">
+    <div class="container">
+      <span class="eyebrow">Semester Period 02</span>
+      <h1>Midterm Activities</h1>
+      <p class="lead">This section documents the Retrieval-Augmented Generation experiment, group project proposal revisions, technical outputs, and reflections I completed during the Midterm period of ITC-C508.</p>
+    </div>
+  </section>
 
-  <section class="section">
+  <section class="section prelim-section">
     <div class="container activity-stack">
-      <article class="activity-card">
-        <div class="activity-header"><span class="activity-kicker">Experiment / Activity</span><h2>Experiment Title</h2></div>
-        <div class="screenshot-placeholder"><div><strong>Add Large Experiment Screenshot Here</strong>Training output, architecture, graph, confusion matrix, notebook cells, or model comparison</div></div>
-        <div class="activity-body">
-          <div class="detail-block"><h3>Experiment Overview</h3><p>[Explain what model or problem you worked on.]</p></div>
-          <div class="detail-block"><h3>Method / Setup</h3><p>[Describe the dataset, model setup, preprocessing, parameters, or tools used.]</p></div>
-          <div class="detail-block wide">
-            <h3>Model Results</h3>
-            <p>[Enter only the actual metrics produced by your experiment.]</p>
-            <div class="metric-grid">
-              <div class="metric"><span>Accuracy</span><strong>—</strong></div>
-              <div class="metric"><span>Precision</span><strong>—</strong></div>
-              <div class="metric"><span>Recall</span><strong>—</strong></div>
-              <div class="metric"><span>F1 Score</span><strong>—</strong></div>
-              <div class="metric"><span>Loss</span><strong>—</strong></div>
-              <div class="metric"><span>Epochs</span><strong>—</strong></div>
-              <div class="metric"><span>Validation Result</span><strong>—</strong></div>
-              <div class="metric"><span>Other Metric</span><strong>—</strong></div>
+      <article class="activity-card academic-entry" id="rag-hallucination-stress-test">
+        <div class="activity-header academic-entry-header">
+          <div>
+            <span class="activity-kicker">Activity 01 · Practical Exercise · Retrieval-Augmented Generation</span>
+            <h2>Grounding Organizational Cybersecurity Guidance with RAG: A Hallucination Stress-Test</h2>
+            <p class="entry-intro">A domain-specific Retrieval-Augmented Generation (RAG) chatbot using three cybersecurity corpora, all-MiniLM-L6-v2 embeddings, ChromaDB retrieval, and a Groq-hosted LLM evaluated under baseline and temperature 1.0 stress-test conditions.</p>
+          </div>
+          <span class="entry-status">Midterm Output 01</span>
+        </div>
+
+        <div class="entry-meta" aria-label="Activity information">
+          <div><span>Course</span><strong>ITC-C508</strong></div>
+          <div><span>Course Title</span><strong>ITE Elective 4: Deep Learning</strong></div>
+          <div><span>Student</span><strong>Stephen Rainiel Adame</strong></div>
+        </div>
+
+        <div class="document-section">
+          <div class="document-heading">
+            <div>
+              <span class="section-label">Submitted Document</span>
+              <h3>PT-M1 IEEE Technical Report</h3>
+              <p>The complete three-page technical report is available below. It covers the RAG pipeline architecture, implementation parameters, dependency fixes, and the baseline vs. stress-test hallucination analysis.</p>
+            </div>
+            <a class="btn btn-secondary document-button" href="assets/documents/ADAME_ITCC508_PT_M1_IEEE_RAG.pdf" target="_blank" rel="noopener">Open Full PDF</a>
+          </div>
+
+          <div class="experiment-snapshot" aria-label="PT-M1 experiment summary">
+            <div>
+              <span>Knowledge Base</span>
+              <strong>297 Chunks</strong>
+              <small>3 cybersecurity PDFs · 500 chars</small>
+            </div>
+            <div>
+              <span>Baseline (Temp 0)</span>
+              <strong>Exact Fallback</strong>
+              <small>Returned required refusal on Apollo 11</small>
+            </div>
+            <div>
+              <span>Stress-Test (Temp 1.0)</span>
+              <strong>Context Refusal</strong>
+              <small>No hallucinated Apollo 11 facts</small>
             </div>
           </div>
-          <div class="detail-block"><h3>Analysis</h3><p>[Explain what the results mean. Compare training and validation behavior if relevant.]</p></div>
-          <div class="detail-block"><h3>Reflection</h3><p>[Describe what you learned, what challenged you, and what you would change in another run.]</p></div>
+
+          <div class="pdf-frame" aria-label="PT-M1 RAG IEEE PDF preview">
+            <object data="assets/documents/ADAME_ITCC508_PT_M1_IEEE_RAG.pdf" type="application/pdf">
+              <div class="pdf-fallback">
+                <strong>PDF preview is not available in this browser.</strong>
+                <p>You can still view the complete document using the button below.</p>
+                <a class="btn btn-primary" href="assets/documents/ADAME_ITCC508_PT_M1_IEEE_RAG.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </object>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="reflection-heading">
+            <span class="section-label">Personal Reflection</span>
+            <h3>What I Learned</h3>
+          </div>
+
+          <div class="reflection-copy">
+            <p>Working on the <strong>Grounding Organizational Cybersecurity Guidance with Retrieval-Augmented Generation</strong> activity showed me how a RAG pipeline actually works from end to end. Instead of letting a language model answer from general pretrained knowledge, we loaded three cybersecurity PDFs, split them into 297 chunks, converted them into embeddings with <code>all-MiniLM-L6-v2</code>, and stored them in ChromaDB for top-3 retrieval. I also ran into practical setup issues along the way, like getting a 404 error on <code>llama-3.1-8b-instant</code> so I had to switch to <code>openai/gpt-oss-20b</code>, plus LangChain and ChromaDB dependency conflicts in Colab that needed version pinning, and using <code>getpass</code> so the Groq API key would not be exposed in the notebook.</p>
+
+            <p>The hallucination stress-test was the part that made the experiment click for me. In Task 2, with temperature set to 0 and the explicit fallback rule enabled, asking about the Apollo 11 lunar mission triggered the exact fallback response. In Task 3, even after raising temperature to 1.0 and removing the fallback sentence, the model still refused to answer because the context-only instruction remained in the system prompt, though its wording became more natural. Seeing both runs retrieve the exact same cybersecurity chunks confirmed that retrieval and generation are separate controls, and that prompt boundaries matter just as much as the vector database.</p>
+
+            <p>Overall, this activity helped me understand that RAG is not an automatic fix for hallucinations on its own. Reliable domain-specific AI systems depend on good chunking, strict grounding instructions, conservative generation settings, secure API key handling, and repeatable environment setup. Testing out-of-domain questions directly instead of assuming the model will behave made the engineering side of LLMOps feel much more concrete.</p>
+          </div>
         </div>
       </article>
 
-      <article class="activity-card">
-        <div class="activity-header"><span class="activity-kicker">Experiment / Activity</span><h2>Activity Title</h2></div>
-        <div class="screenshot-placeholder"><div><strong>Add Screenshot Here</strong>Flexible space for another midterm experiment or technical activity.</div></div>
-        <div class="activity-body">
-          <div class="detail-block"><h3>Objective</h3><p>[Add content here.]</p></div>
-          <div class="detail-block"><h3>Process</h3><p>[Add content here.]</p></div>
-          <div class="detail-block"><h3>Results</h3><p>[Add actual results here.]</p></div>
-          <div class="detail-block"><h3>Reflection</h3><p>[Add your reflection here.]</p></div>
+      <article class="activity-card academic-entry" id="project-proposal">
+        <div class="activity-header academic-entry-header">
+          <div>
+            <span class="activity-kicker">Activity 02 · Written Work · Group Project Proposal (QuantumStack)</span>
+            <h2>LendSuri: SEC Regulatory Record Retrieval Chatbot (V1 to Final Proposal)</h2>
+            <p class="entry-intro">A side-by-side comparison of our initial rejected project proposal and the revised final proposal for LendSuri, a cybersecurity-focused RAG chatbot for Philippine Online Lending Platforms.</p>
+          </div>
+          <span class="entry-status">Midterm Output 02</span>
+        </div>
+
+        <div class="entry-meta" aria-label="Activity information">
+          <div><span>Course</span><strong>ITC-C508</strong></div>
+          <div><span>Course Title</span><strong>ITE Elective 4: Deep Learning</strong></div>
+          <div><span>Group</span><strong>QuantumStack (Adame, Nerido, Gutierrez)</strong></div>
+        </div>
+
+        <div class="document-section">
+          <div class="document-heading">
+            <div>
+              <span class="section-label">Submitted Documents</span>
+              <h3>Proposal Revision Comparison (Version 1 vs. Final Version)</h3>
+              <p>Both versions of the WW-M2 project proposal are shown side by side below so the shift in problem specificity, scope, and knowledge-base boundaries is easy to compare.</p>
+            </div>
+          </div>
+
+          <div class="proposal-compare-grid">
+            <section class="proposal-column" aria-label="Initial Project Proposal Version 1">
+              <div class="proposal-column-head">
+                <div>
+                  <span class="section-label">Initial Submission</span>
+                  <h4>Version 1: College Student Cybersecurity Guidance</h4>
+                  <p>Focused broadly on phishing, suspicious links, passwords, and compromised accounts under SDG 4, using Qwen3-Coder-Flash.</p>
+                </div>
+                <span class="proposal-badge proposal-badge-rejected">V1 · Rejected</span>
+              </div>
+
+              <div class="pdf-frame" aria-label="WW-M2 Project Proposal Version 1 PDF preview">
+                <object data="assets/documents/QuantumStack_WW-M2-Project-Proposal-V1.pdf" type="application/pdf">
+                  <div class="pdf-fallback">
+                    <strong>PDF preview is not available in this browser.</strong>
+                    <p>You can still view Version 1 using the button below.</p>
+                    <a class="btn btn-primary" href="assets/documents/QuantumStack_WW-M2-Project-Proposal-V1.pdf" target="_blank" rel="noopener">View V1 PDF</a>
+                  </div>
+                </object>
+              </div>
+
+              <div class="proposal-column-actions">
+                <a class="btn btn-secondary" href="assets/documents/QuantumStack_WW-M2-Project-Proposal-V1.pdf" target="_blank" rel="noopener">Open Full V1 PDF</a>
+              </div>
+            </section>
+
+            <section class="proposal-column" aria-label="Final Project Proposal">
+              <div class="proposal-column-head">
+                <div>
+                  <span class="section-label">Revised Submission</span>
+                  <h4>Final Version: LendSuri (Philippine OLP SEC Records)</h4>
+                  <p>Narrowed to retrieving and explaining official Philippine SEC records and complaint procedures for Online Lending Platforms under SDG 16, using Llama-SEA-LION-v3 8B-IT.</p>
+                </div>
+                <span class="proposal-badge proposal-badge-accepted">Final · Approved</span>
+              </div>
+
+              <div class="pdf-frame" aria-label="WW-M2 Final Project Proposal PDF preview">
+                <object data="assets/documents/QuantumStack_WW-M2-Project-Proposal-Final.pdf" type="application/pdf">
+                  <div class="pdf-fallback">
+                    <strong>PDF preview is not available in this browser.</strong>
+                    <p>You can still view the Final Proposal using the button below.</p>
+                    <a class="btn btn-primary" href="assets/documents/QuantumStack_WW-M2-Project-Proposal-Final.pdf" target="_blank" rel="noopener">View Final PDF</a>
+                  </div>
+                </object>
+              </div>
+
+              <div class="proposal-column-actions">
+                <a class="btn btn-secondary" href="assets/documents/QuantumStack_WW-M2-Project-Proposal-Final.pdf" target="_blank" rel="noopener">Open Full Final PDF</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="reflection-heading">
+            <span class="section-label">Personal Reflection</span>
+            <h3>What I Learned</h3>
+          </div>
+
+          <div class="reflection-copy">
+            <p>Working on our <strong>WW-M2 Project Proposal</strong> with my groupmates in QuantumStack taught me how much a clear, narrow problem statement matters before building any AI system. Our first version proposed a RAG chatbot for general cybersecurity incident guidance among college students, covering phishing, suspicious links, passwords, and compromised accounts. That first version was rejected because it was a problem that is not specific and relevant enough, and the scale and scope can become so large that it would be difficult to manage properly in a student project.</p>
+
+            <p>Going back to revise the proposal pushed us to look for a real-world problem with tighter boundaries and clearer sources. That led to <strong>LendSuri</strong>, which focuses specifically on helping Filipino users check official Philippine SEC records for Online Lending Platforms instead of trying to cover general cybersecurity advice. By narrowing the knowledge base to a dated SEC OLP registry snapshot, the 2021 historical list, recent SEC advisories, MC No. 20 s. 2026, and official complaint procedures, we were able to define a measurable evaluation plan with around 30 test questions and choose <code>Llama-SEA-LION-v3 8B-IT</code> to support both English and Filipino queries.</p>
+
+            <p>Looking at Version 1 and the Final Version side by side makes it obvious why the rejection was helpful. The revised proposal is much more grounded, easier to test, and directly tied to a specific local issue where authoritative records actually exist. As a fourth-year student, this experience reminded me that scoping down a project early does not make it weaker; instead, it makes the system more realistic to build, evaluate, and defend.</p>
+          </div>
         </div>
       </article>
     </div>
   </section>
 </main>
 
-<footer class="site-footer"><div class="container footer-row"><span>Stephen Rainiel Adame · ITC-C508</span><span>Midterm Course Work · <span data-year></span></span></div></footer>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>Stephen Rainiel Adame · ITC-C508</span>
+    <span>Midterm Course Work · <span data-year></span></span>
+  </div>
+</footer>
 <script src="assets/script.js?v=20260913-2"></script>
 </body>
 </html>
