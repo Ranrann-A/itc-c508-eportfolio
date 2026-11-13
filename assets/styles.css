@@ -1454,3 +1454,123 @@ html[data-theme="light"] .image-badge { color: #7051c7; }
   .artifact-preview { min-height: 190px; padding: 10px; }
   .artifact-preview img { max-height: 280px; }
 }
+
+/* Midterm side-by-side proposal comparison */
+.proposal-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.proposal-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+}
+.proposal-column-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+.proposal-column-head h4 {
+  margin: 6px 0 6px;
+  font-size: 1.08rem;
+  color: var(--text);
+}
+.proposal-column-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.5;
+}
+.proposal-badge {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+}
+.proposal-badge-rejected {
+  background: rgba(235, 95, 95, .12);
+  color: #f28b8b;
+  border-color: rgba(235, 95, 95, .28);
+}
+.proposal-badge-accepted {
+  background: rgba(100, 216, 167, .12);
+  color: #64d8a7;
+  border-color: rgba(100, 216, 167, .28);
+}
+html[data-theme="light"] .proposal-badge-rejected { color: #b42318; }
+html[data-theme="light"] .proposal-badge-accepted { color: #18764c; }
+.proposal-column .pdf-frame {
+  min-height: 580px;
+}
+.proposal-column .pdf-frame object {
+  height: 600px;
+}
+.proposal-column .pdf-fallback {
+  min-height: 580px;
+}
+.proposal-column-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+@media (max-width: 960px) {
+  .proposal-compare-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .proposal-column {
+    padding: 16px;
+  }
+  .proposal-column-head {
+    flex-direction: column;
+  }
+  .proposal-column .pdf-frame {
+    min-height: 460px;
+  }
+  .proposal-column .pdf-frame object {
+    height: 480px;
+  }
+  .proposal-column .pdf-fallback {
+    min-height: 460px;
+  }
+  .proposal-column-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Balanced 2-col resource grid and grouped P-F1 file sections */
+.resource-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.resource-group {
+  margin-top: 22px;
+}
+.resource-group-head {
+  margin-bottom: 12px;
+}
+.resource-group-head h4 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  color: var(--text);
+}
+.resource-group-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .86rem;
+}
+@media (max-width: 960px) {
+  .resource-grid-two {
+    grid-template-columns: 1fr;
+  }
+}
